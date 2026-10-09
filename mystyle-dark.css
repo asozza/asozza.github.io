@@ -1,0 +1,117 @@
+
+html{ background-color: #36454F}
+
+body{ font-family: "Georgia", serif;
+      font-size: 10pt;
+      color: gainsboro;
+      background-color: #36454F;
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+P { color: gainsboro }
+H3 { color: gainsboro }
+H3.western { font-family: "Georgia", serif }
+A:link { color: gainsboro }
+A:visited { color: gainsboro }
+A:hover { color: gainsboro }
+A:active { color: gainsboro }
+
+li.big {
+    line-height: 1.3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+	-ms-flex: 50%;
+	flex: 50%;
+	max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+	-ms-flex: 100%;
+	flex: 100%;
+	max-width: 100%;
+    }
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: gainsboro;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.container:hover .overlay {
+    visibility: visible;
+    opacity: 0.6;
+}
+
+.text {
+    color: black;
+    font-size: 12pt;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+hr.normal {
+    height: 4px;
+    background: gainsboro;
+    border: 0;
+}
+
